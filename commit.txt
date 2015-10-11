@@ -1,3 +1,9 @@
+commit 17c73285a38f970327b7be6fcff50ff6cad8ae94
+Author: SoyAndresHernandez <soyandreshernandez@gmail.com>
+Date:   Sun Oct 11 15:19:33 2015 -0500
+
+    Agregando base Gulpfile.js
+
 commit ef844cb7f3d2be9f949b85b080bfff86b1243b9a
 Author: SoyAndresHernandez <soyandreshernandez@gmail.com>
 Date:   Sun Oct 11 15:11:41 2015 -0500
