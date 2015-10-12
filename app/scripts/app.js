@@ -11,12 +11,12 @@
             controllerAs : 'home'
         })
         .when('/register',{
-            templateUrl  : 'views/home/index.html',
+            templateUrl  : 'views/home/register.html',
             controller   : 'HomeController',
             controllerAs : 'home'
         })
         .when('/login',{
-            templateUrl  : 'views/home/index.html',
+            templateUrl  : 'views/home/login.html',
             controller   : 'HomeController',
             controllerAs : 'home'
         })
