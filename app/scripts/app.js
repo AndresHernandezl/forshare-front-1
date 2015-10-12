@@ -1,39 +1,40 @@
 (function() {
     'use strict';
-    angular.module('appForshare',['ngRoute','appForshare.controllers']);
+    angular.module('appForshare',['ngRoute', 'appForshare.controllers', 'appForshare.services']);
 
     function config ($locationProvider, $routeProvider) {
-        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(false);
+
         $routeProvider
         .when('/',{
-            templateUrl  : 'views/home/index.html',
+            templateUrl  : 'views/home/index.tpl.html',
             controller   : 'HomeController',
-            controllerAs : 'home'
+            controllerAs : 'homelist'
         })
         .when('/register',{
             templateUrl  : 'views/home/register.html',
-            controller   : 'HomeController',
-            controllerAs : 'home'
+            controller   : 'regiterController',
+            controllerAs : 'regiter'
         })
         .when('/login',{
             templateUrl  : 'views/home/login.html',
-            controller   : 'HomeController',
-            controllerAs : 'home'
+            controller   : 'LoginController',
+            controllerAs : 'login'
         })
-        .when('/items/:itemsId',{
-            templateUrl  : 'views/home/index.html',
+        .when('/item/:itemId',{
+            templateUrl  : 'views/item/items_id.html',
             controller   : 'itemsController',
             controllerAs : 'items'
         })
         .when('/newitems',{
-            templateUrl  : 'views/home/index.html',
-            controller   : 'HomeController',
-            controllerAs : 'home'
+            templateUrl  : 'views/item/new_item.html',
+            controller   : 'newitemsController',
+            controllerAs : 'newitems'
         })
-        .when('/users/:userId',{
-            templateUrl  : 'views/home/index.html',
-            controller   : 'HomeController',
-            controllerAs : 'home'
+        .when('/user/:userId',{
+            templateUrl  : 'views/user/user_id.html',
+            controller   : 'userController',
+            controllerAs : 'user'
         })
     }
     angular
