@@ -8,7 +8,7 @@
 
     /* @ngInject */
     function config ($locationProvider, $routeProvider) {
-        //$locationProvider.html5Mode(true);
+
 
         $routeProvider
         .when('/', {
@@ -41,6 +41,8 @@
             controller   : 'userController',
             controllerAs : 'user'
         });
+
+        $locationProvider.html5Mode(true);
     }
 
 })();
